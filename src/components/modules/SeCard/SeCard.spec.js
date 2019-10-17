@@ -5,9 +5,13 @@ import renderer from 'react-test-renderer'
 import 'jest-styled-components'
 import SeCard from './SeCard'
 
+import imgTile from 'assets/images/tile.jpg'
+import imgLogo from 'assets/images/logo.png'
 
 const defaultProps = {
   title: 'Home Shopping',
+  imgTile: imgTile,
+  imgLogo: imgLogo,
 }
 
 const setup = (partialProps) => {

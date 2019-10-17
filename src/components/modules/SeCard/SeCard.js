@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { ThemeContext } from 'components/context'
 import { styles } from './SeCard.style'
 
-const SeCard = ({ imglogo, imgtile, title, href }) => {
+const SeCard = ({ imgLogo, imgTile, title, href }) => {
   const theme = useContext(ThemeContext)
 
   const Card = styled.div`
@@ -38,12 +38,12 @@ const SeCard = ({ imglogo, imgtile, title, href }) => {
         aria-label={`Navigate to ${title} page`}
       >
         <CardProgramImage
-          src={ imgtile }
+          src={ imgTile }
           alt="Card image"
         />
         <CardContent>
           <CardContentImg
-            src={ imglogo }
+            src={ imgLogo }
             alt="Seven logo"
           />
           <CardContentTitle>
@@ -56,15 +56,13 @@ const SeCard = ({ imglogo, imgtile, title, href }) => {
 }
 
 SeCard.propTypes = {
-  imglogo: PropTypes.object,
-  imgtile: PropTypes.object,
+  imgLogo: PropTypes.object.isRequired,
+  imgTile: PropTypes.object.isRequired,
   title: PropTypes.string.isRequired,
   href: PropTypes.string,
 }
 
 SeCard.defaultProps = {
-  imglogo: null,
-  imgtile: null,
   href: '#',
 }
 

@@ -3,6 +3,18 @@
 exports[`<SeCard /> component renders component with props 1`] = `
 Object {
   "props": Object {
+    "imgLogo": Object {
+      "canInstrument": true,
+      "createTransformer": [Function],
+      "getCacheKey": [Function],
+      "process": [Function],
+    },
+    "imgTile": Object {
+      "canInstrument": true,
+      "createTransformer": [Function],
+      "getCacheKey": [Function],
+      "process": [Function],
+    },
     "title": "Home and Away",
   },
   "wrapper": <SeCard__Card>
@@ -12,12 +24,26 @@ Object {
     >
       <SeCard__CardProgramImage
         alt="Card image"
-        src={null}
+        src={
+          Object {
+            "canInstrument": true,
+            "createTransformer": [Function],
+            "getCacheKey": [Function],
+            "process": [Function],
+          }
+        }
       />
       <SeCard__CardContent>
         <SeCard__CardContentImg
           alt="Seven logo"
-          src={null}
+          src={
+            Object {
+              "canInstrument": true,
+              "createTransformer": [Function],
+              "getCacheKey": [Function],
+              "process": [Function],
+            }
+          }
         />
         <SeCard__CardContentTitle>
           Home and Away
@@ -80,7 +106,14 @@ exports[`<SeCard /> component renders component with styles 1`] = `
     <img
       alt="Card image"
       className="c1"
-      src={null}
+      src={
+        Object {
+          "canInstrument": true,
+          "createTransformer": [Function],
+          "getCacheKey": [Function],
+          "process": [Function],
+        }
+      }
     />
     <div
       className="c2"
@@ -88,7 +121,14 @@ exports[`<SeCard /> component renders component with styles 1`] = `
       <img
         alt="Seven logo"
         className="c3"
-        src={null}
+        src={
+          Object {
+            "canInstrument": true,
+            "createTransformer": [Function],
+            "getCacheKey": [Function],
+            "process": [Function],
+          }
+        }
       />
       <p
         className="c4"

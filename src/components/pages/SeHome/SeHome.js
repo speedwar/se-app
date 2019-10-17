@@ -19,8 +19,8 @@ const Content = () => (
   <>
     <CardContainer>
       <SeCard
-        imgLogo={ imgTile }
-        imgTile={ imgLogo }
+        imgLogo={ imgLogo }
+        imgTile={ imgTile }
         title={ enau.programs.homeandaway.title }
       />
     </CardContainer>

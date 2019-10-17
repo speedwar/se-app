@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { createGlobalStyle } from 'styled-components'
+import { Normalize } from 'styled-normalize'
+import { SeHome } from 'components/pages'
+import { ThemeProvider } from 'components/context/ThemeContext'
+import { themeMain } from 'components/styles'
 
-function App() {
+const GlobalStyles = createGlobalStyle`
+  html {
+    box-sizing: border-box;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  body {
+    font-family: Helvetica, arial, sans-serif;
+  }
+`
+
+// styled theming via useContext React hook
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <ThemeProvider value={ themeMain.light }>
+      <Normalize />
+      <GlobalStyles />
+      <SeHome />
+    </ThemeProvider>
+  )
 }
 
-export default App;
+export default App

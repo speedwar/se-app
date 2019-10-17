@@ -2,16 +2,35 @@
   "name": "se-app",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "react-scripts": "3.2.0"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage --colors",
+    "test:update": "jest --updateSnapshot --colors"
+  },
+  "dependencies": {
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "enzyme-to-json": "^3.4.2",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-scripts": "3.2.0",
+    "styled-components": "^4.4.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-json-strings": "^7.2.0",
+    "@babel/plugin-syntax-import-meta": "^7.2.0",
+    "@babel/plugin-transform-flow-strip-types": "^7.6.3",
+    "babel-jest": "^24.9.0",
+    "babel-plugin-styled-components": "^1.10.6",
+    "jest": "^24.9.0",
+    "jest-cli": "^24.9.0",
+    "jest-plugin-context": "^2.9.0",
+    "jest-styled-components": "^6.3.3",
+    "react-test-renderer": "^16.10.2",
+    "styled-normalize": "^8.0.6"
   },
   "eslintConfig": {
     "extends": "react-app"

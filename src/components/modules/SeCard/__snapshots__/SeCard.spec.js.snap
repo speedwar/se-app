@@ -1,22 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<SeCard /> component renders component with props 1`] = `
-<SeCard__Card>
-  <SeCard__CardClickable
-    aria-label="Navigate to undefined page"
-    href="#"
-  >
-    <SeCard__CardProgramImage
-      alt="Card image"
-    />
-    <SeCard__CardContent>
-      <SeCard__CardContentImg
-        alt="Seven logo"
+Object {
+  "props": Object {
+    "title": "Home and Away",
+  },
+  "wrapper": <SeCard__Card>
+    <SeCard__CardClickable
+      aria-label="Navigate to Home and Away page"
+      href="#"
+    >
+      <SeCard__CardProgramImage
+        alt="Card image"
+        src={null}
       />
-      <SeCard__CardContentTitle />
-    </SeCard__CardContent>
-  </SeCard__CardClickable>
-</SeCard__Card>
+      <SeCard__CardContent>
+        <SeCard__CardContentImg
+          alt="Seven logo"
+          src={null}
+        />
+        <SeCard__CardContentTitle>
+          Home and Away
+        </SeCard__CardContentTitle>
+      </SeCard__CardContent>
+    </SeCard__CardClickable>
+  </SeCard__Card>,
+}
 `;
 
 exports[`<SeCard /> component renders component with styles 1`] = `
@@ -64,13 +73,14 @@ exports[`<SeCard /> component renders component with styles 1`] = `
   className="c0"
 >
   <a
-    aria-label="Navigate to undefined page"
+    aria-label="Navigate to Home Shopping page"
     className=""
     href="#"
   >
     <img
       alt="Card image"
       className="c1"
+      src={null}
     />
     <div
       className="c2"
@@ -78,10 +88,13 @@ exports[`<SeCard /> component renders component with styles 1`] = `
       <img
         alt="Seven logo"
         className="c3"
+        src={null}
       />
       <p
         className="c4"
-      />
+      >
+        Home Shopping
+      </p>
     </div>
   </a>
 </div>

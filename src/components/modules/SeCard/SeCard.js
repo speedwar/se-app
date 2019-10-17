@@ -1,9 +1,10 @@
-import React, { memo, useContext } from 'react'
+import React, { useContext } from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { ThemeContext } from 'components/context'
 import { styles } from './SeCard.style'
 
-const SeCard = ({ logo, image, title, href }) => {
+const SeCard = ({ imglogo, imgtile, title, href }) => {
   const theme = useContext(ThemeContext)
 
   const Card = styled.div`
@@ -33,16 +34,16 @@ const SeCard = ({ logo, image, title, href }) => {
   return (
     <Card>
       <CardClickable
-        href={ href || '#' }
+        href={ href }
         aria-label={`Navigate to ${title} page`}
       >
         <CardProgramImage
-          src={ image }
+          src={ imgtile }
           alt="Card image"
         />
         <CardContent>
           <CardContentImg
-            src={ logo }
+            src={ imglogo }
             alt="Seven logo"
           />
           <CardContentTitle>
@@ -54,4 +55,17 @@ const SeCard = ({ logo, image, title, href }) => {
   )
 }
 
-export default memo(SeCard)
+SeCard.propTypes = {
+  imglogo: PropTypes.object,
+  imgtile: PropTypes.object,
+  title: PropTypes.string.isRequired,
+  href: PropTypes.string,
+}
+
+SeCard.defaultProps = {
+  imglogo: null,
+  imgtile: null,
+  href: '#',
+}
+
+export default SeCard

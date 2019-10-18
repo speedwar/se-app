@@ -57,8 +57,7 @@ Object {
 exports[`<SeCard /> component renders component with styles 1`] = `
 .c0 {
   position: relative;
-  width: 315px;
-  height: 177px;
+  width: 100%;
 }
 
 .c1 {
@@ -93,6 +92,13 @@ exports[`<SeCard /> component renders component with styles 1`] = `
 .c4 {
   color: font-size:16px;
   font-weight: 700;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    width: 315px;
+    height: 177px;
+  }
 }
 
 <div

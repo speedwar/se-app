@@ -9,10 +9,14 @@ import imgLogo from 'assets/images/logo.png'
 
 const CardContainer = styled.div`
   width: 100%;
-  height: 700px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: auto;
+
+  @media (min-width: 768px) {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `
 
 const Content = () => (

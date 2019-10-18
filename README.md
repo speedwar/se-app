@@ -1,11 +1,11 @@
 This project was bootstrapped with [Create React App 3](https://github.com/facebook/create-react-app).
 
-## Staging site
+## Demo site
 
 https://www.netlify.com is simply used for hosting static sites like GitHub pages.
 [https://condescending-jones-656c33.netlify.com/](https://condescending-jones-656c33.netlify.com/)
 
-## node versions
+## Node versions
 
 If you are experiencing a difficult to install, please switch to below versions.
 
@@ -60,12 +60,25 @@ src/
         SeCard.style.js
 ```
 
-## Comment about the test
+## Feedback
 
-TODO
+I used create-react-app3 to start and finish the project quickly without spending too much time for doing Webpack4 configuration.
+Migrating reactjs app from Sass to styled-components seems daunting, but with a couple right tooling, it can work very well.
 
-## TODO list
+### Theme
 
-Webpack4 configuration
-postcss setup
-Nextjs
+ThemeContext is used for global theme.
+Use useContext to access the current theme outside of styled components with React Hooks.
+
+### Unit testing
+
+Obviously used Jest Testing Framework. Simply run `npm test` to test components
+I wrote props checking and styles checking cases for testing.
+Test must be passed to initialise `npm build`
+
+### improvement
+
+1. styled-components can be much more improved.
+2. create-react-app3 can be replaced to webpack4.
+3. Storybook5 can be implemented for FE styleguides
+4. i18n localisation can be fully done.

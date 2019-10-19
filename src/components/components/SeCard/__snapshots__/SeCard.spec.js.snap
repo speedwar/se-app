@@ -17,14 +17,14 @@ Object {
     },
     "title": "Home and Away",
   },
-  "wrapper": <SeCard__Card>
-    <SeCard__CardClickable
+  "wrapper": <SeCardstyle__Card>
+    <SeCardstyle__CardClickable
       aria-label="Navigate to Home and Away page"
       href="#"
     >
-      <SeCard__CardContent>
-        <SeCard__CardImageResponsive>
-          <SeCard__CardProgramImage
+      <SeCardstyle__CardContent>
+        <SeCardstyle__CardImageResponsive>
+          <SeCardstyle__CardProgramImage
             alt="Card image"
             src={
               Object {
@@ -35,9 +35,9 @@ Object {
               }
             }
           />
-        </SeCard__CardImageResponsive>
-        <SeCard__CardContentBottom>
-          <SeCard__CardContentImg
+        </SeCardstyle__CardImageResponsive>
+        <SeCardstyle__CardContentBottom>
+          <SeCardstyle__CardContentImg
             alt="Seven logo"
             src={
               Object {
@@ -48,25 +48,24 @@ Object {
               }
             }
           />
-          <SeCard__CardContentTitle>
+          <SeCardstyle__CardContentTitle>
             Home and Away
-          </SeCard__CardContentTitle>
-        </SeCard__CardContentBottom>
-      </SeCard__CardContent>
-    </SeCard__CardClickable>
-  </SeCard__Card>,
+          </SeCardstyle__CardContentTitle>
+        </SeCardstyle__CardContentBottom>
+      </SeCardstyle__CardContent>
+    </SeCardstyle__CardClickable>
+  </SeCardstyle__Card>,
 }
 `;
 
 exports[`<SeCard /> component renders component with styles 1`] = `
 .c0 {
+  display: inline-block;
   position: relative;
-  width: 100%;
   padding-right: .5em;
   padding-left: .5em;
   margin-bottom: 2.5em;
-  width: 25%;
-  display: inline-block;
+  width: 100%;
 }
 
 .c3 {
@@ -116,6 +115,30 @@ exports[`<SeCard /> component renders component with styles 1`] = `
   padding-top: 56.25%;
   height: 0;
   position: relative;
+}
+
+@media (min-width:480px) {
+  .c0 {
+    width: 50%;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    width: 33.33%;
+  }
+}
+
+@media (min-width:992px) {
+  .c0 {
+    width: 25%;
+  }
+}
+
+@media (min-width:1200px) {
+  .c0 {
+    width: 340px;
+  }
 }
 
 <div

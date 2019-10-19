@@ -5,19 +5,18 @@ This project was bootstrapped with
 [Styled components](https://www.styled-components.com).
 Styled components is used in place of CSS / SASS.
 
+## Github pages
+
+> `[https://speedwar.github.io/se-app/](https://speedwar.github.io/se-app/)`
+
 ## Demo site
-
-### Github pages
-
-
-### Netlify
-Netlify is allin-one platform that used for automating frontend web-proejct CI/CD.
-[https://condescending-jones-656c33.netlify.com/](https://condescending-jones-656c33.netlify.com/)
+Netlify is all-in-one platform that used for automating frontend web-proejct CI/CD.
+> `[https://condescending-jones-656c33.netlify.com/](https://condescending-jones-656c33.netlify.com/)`
 
 ## Versioning
 
 ### v0.1.0
-inital commit
+First commit
 
 ### v0.1.1
 Added default header / main / footer styles

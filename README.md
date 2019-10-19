@@ -7,11 +7,11 @@ Styled components is used in place of CSS / SASS.
 
 ## Github pages
 
-> `[https://speedwar.github.io/se-app/](https://speedwar.github.io/se-app/)`
+> [https://speedwar.github.io/se-app/](https://speedwar.github.io/se-app/)
 
 ## Demo site
 Netlify is all-in-one platform that used for automating frontend web-proejct CI/CD.
-> `[https://condescending-jones-656c33.netlify.com/](https://condescending-jones-656c33.netlify.com/)`
+> [https://condescending-jones-656c33.netlify.com/](https://condescending-jones-656c33.netlify.com/)
 
 ## Versioning
 

@@ -105,5 +105,5 @@ Test must be passed to initialise `npm build`
 - [x] Add layout grids
 - [x] Add more test cases.
 - [ ] Replace create-react-app3 to webpack4.
-- [ ] Implemented Storybook5 FE styleguides.
-- [ ] i18n localisation.
+- [ ] Implement Storybook5 FE styleguides.
+- [ ] Implement i18n localisation.

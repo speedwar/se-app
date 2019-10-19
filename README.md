@@ -16,11 +16,15 @@ Netlify is all-in-one platform that used for automating frontend web-proejct CI/
 ## Versioning
 
 ### v0.1.0
-First commit
+* FE setup
+* Created basic Card component
+* Setup Jest configration
 
 ### v0.1.1
-Added default header / main / footer styles
-
+* removed package-lock.json
+* Added default header / main / footer styles
+* Added more test cases
+* Added new modules styled-media-query / @bootstrap-styled/v4 / @bootstrap-styled/provider
 
 ## Package managers
 
@@ -62,20 +66,20 @@ Update exisiting snapshots
 
 > ### `npm build`
 
-Builds the app for production to the `build` folder.<br  />
+Builds the app for production to the `build` folder.
 It correctly bundles React in production mode and optimizes the build for the best performance.
 The build is minified and the filenames include the hashes.
 
 ## Key files to review
 ```
 src/
-	App.js
-	components/
-		modules/
-			SeCard/
-				SeCard.js
-				SeCard.spec.js
-				SeCard.style.js
+ App.js
+ components/
+  components/
+	 SeCard/
+	  SeCard.js
+	  SeCard.spec.js
+		SeCard.style.js
 ```
 
 ## Feedback
@@ -94,9 +98,10 @@ Obviously used Jest Testing Framework. Simply run `npm test` to test components
 I wrote props checking and styles checking cases for testing.
 Test must be passed to initialise `npm build`
 
-### improvement
+### improvements
 
-1. styled-components can be much more improved.
-2. create-react-app3 can be replaced to webpack4.
-3. Storybook5 can be implemented for FE styleguides
-4. i18n localisation can be fully done.
+[x] Styled-components can be much more improved.
+[x] Add more test cases.
+[ ] Replace create-react-app3 to webpack4.
+[ ] Implemented Storybook5 FE styleguides.
+[ ] i18n localisation.

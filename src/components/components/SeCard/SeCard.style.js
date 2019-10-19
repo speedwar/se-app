@@ -1,11 +1,6 @@
 export const card = `
   position: relative;
   width: 100%;
-
-  @media (min-width: 768px) {
-    width: 315px;
-    height: 177px;
-  }
 `
 
 export const cardContent = `

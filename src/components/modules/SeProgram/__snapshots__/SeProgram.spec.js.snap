@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SeProgram /> component renders component with props 1`] = `
+Object {
+  "props": Object {
+    "title": "Now On",
+  },
+  "wrapper": <SeProgramstyle__SeProgramContainer>
+    <SeProgramstyle__SeProgramTitle>
+      Now On
+    </SeProgramstyle__SeProgramTitle>
+    <SeProgramstyle__SeProgramContent>
+      <SeCard
+        href="#"
+        imgLogo={
+          Object {
+            "canInstrument": true,
+            "createTransformer": [Function],
+            "getCacheKey": [Function],
+            "process": [Function],
+          }
+        }
+        imgTile={
+          Object {
+            "canInstrument": true,
+            "createTransformer": [Function],
+            "getCacheKey": [Function],
+            "process": [Function],
+          }
+        }
+        title="Home and Away"
+      />
+      <SeCard
+        href="#"
+        imgLogo={
+          Object {
+            "canInstrument": true,
+            "createTransformer": [Function],
+            "getCacheKey": [Function],
+            "process": [Function],
+          }
+        }
+        imgTile={
+          Object {
+            "canInstrument": true,
+            "createTransformer": [Function],
+            "getCacheKey": [Function],
+            "process": [Function],
+          }
+        }
+        title="Home and Away"
+      />
+      <SeCard
+        href="#"
+        imgLogo={
+          Object {
+            "canInstrument": true,
+            "createTransformer": [Function],
+            "getCacheKey": [Function],
+            "process": [Function],
+          }
+        }
+        imgTile={
+          Object {
+            "canInstrument": true,
+            "createTransformer": [Function],
+            "getCacheKey": [Function],
+            "process": [Function],
+          }
+        }
+        title="Home and Away"
+      />
+      <SeCard
+        href="#"
+        imgLogo={
+          Object {
+            "canInstrument": true,
+            "createTransformer": [Function],
+            "getCacheKey": [Function],
+            "process": [Function],
+          }
+        }
+        imgTile={
+          Object {
+            "canInstrument": true,
+            "createTransformer": [Function],
+            "getCacheKey": [Function],
+            "process": [Function],
+          }
+        }
+        title="Home and Away"
+      />
+      <SeCard
+        href="#"
+        imgLogo={
+          Object {
+            "canInstrument": true,
+            "createTransformer": [Function],
+            "getCacheKey": [Function],
+            "process": [Function],
+          }
+        }
+        imgTile={
+          Object {
+            "canInstrument": true,
+            "createTransformer": [Function],
+            "getCacheKey": [Function],
+            "process": [Function],
+          }
+        }
+        title="Home and Away"
+      />
+      <SeCard
+        href="#"
+        imgLogo={
+          Object {
+            "canInstrument": true,
+            "createTransformer": [Function],
+            "getCacheKey": [Function],
+            "process": [Function],
+          }
+        }
+        imgTile={
+          Object {
+            "canInstrument": true,
+            "createTransformer": [Function],
+            "getCacheKey": [Function],
+            "process": [Function],
+          }
+        }
+        title="Home and Away"
+      />
+    </SeProgramstyle__SeProgramContent>
+  </SeProgramstyle__SeProgramContainer>,
+}
+`;

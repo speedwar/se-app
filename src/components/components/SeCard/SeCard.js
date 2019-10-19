@@ -1,23 +1,34 @@
 import React, { useContext } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { ThemeContext } from 'components/context'
+import { colors } from 'components/styles'
 import { styles } from './SeCard.style'
 
 const SeCard = ({ imgLogo, imgTile, title, href }) => {
-  const theme = useContext(ThemeContext)
-
   const Card = styled.div`
     ${styles.card}
+    padding-right: .5em;
+    padding-left: .5em;
+    margin-bottom: 2.5em;
+    width: 25%;
+    display: inline-block;
   `
 
   const CardClickable = styled.a``
 
   const CardProgramImage = styled.img`
     width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
   `
 
   const CardContent = styled.div`
+   position: relative;
+  `
+
+  const CardContentBottom = styled.div`
     ${styles.cardContent}
   `
 
@@ -26,9 +37,15 @@ const SeCard = ({ imgLogo, imgTile, title, href }) => {
   `
 
   const CardContentTitle = styled.p`
-    color: ${theme.white}
+    color: ${colors.white}
     font-size: 16px;
     font-weight: 700;
+  `
+
+  const CardImageResponsive = styled.div`
+    padding-top: 56.25%;
+    height: 0;
+    position: relative;
   `
 
   return (
@@ -37,18 +54,22 @@ const SeCard = ({ imgLogo, imgTile, title, href }) => {
         href={ href }
         aria-label={`Navigate to ${title} page`}
       >
-        <CardProgramImage
-          src={ imgTile }
-          alt="Card image"
-        />
         <CardContent>
-          <CardContentImg
-            src={ imgLogo }
-            alt="Seven logo"
-          />
-          <CardContentTitle>
-            { title }
-          </CardContentTitle>
+          <CardImageResponsive>
+            <CardProgramImage
+              src={ imgTile }
+              alt="Card image"
+            />
+          </CardImageResponsive>
+          <CardContentBottom>
+            <CardContentImg
+              src={ imgLogo }
+              alt="Seven logo"
+            />
+            <CardContentTitle>
+              { title }
+            </CardContentTitle>
+          </CardContentBottom>
         </CardContent>
       </CardClickable>
     </Card>

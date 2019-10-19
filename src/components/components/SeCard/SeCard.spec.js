@@ -35,8 +35,6 @@ describe('<SeCard /> component', () => {
   it('renders component with styles', () => {
     const wrapper = renderer.create(<SeCard { ...defaultProps } />).toJSON()
     expect(wrapper).toMatchSnapshot()
-    // expect(wrapper).toHaveStyleRule('position', expect.stringContaining('relative'))
-    // expect(wrapper).not.toHaveStyleRule('margin')
-    // expect(wrapper).not.toHaveStyleRule('padding')
+    expect(wrapper).toHaveStyleRule('position', expect.stringContaining('relative'))
   })
 })

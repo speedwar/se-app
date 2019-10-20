@@ -81,22 +81,22 @@ SeCard.spec.js
 SeCard.style.js
 ```
 
-## Feedback
+## Comment
 
-I used `create-react-app3` to start and finish the project quickly without spending too much time for doing Webpack4 configuration.
-
-Migrating reactjs app from Sass to styled-components seems daunting, but with a couple right tooling, it can work very well.
+I used `create-react-app3` to start and finish this project quickly without spending too much time for doing Webpack4 configuration.
+Migrating reactjs app from SASS to styled-components seems daunting, but with a couple right tooling, it can work very well.
+Unbelievably **styled-components** works pretty with React Context API. Now I'm starting to love styled-components!
 
 ### Theme
 
-ThemeContext is used for global theme.
-Use useContext to access the current theme outside of styled components with React Hooks.
+Reaect Context API is used for global theme.
+Click **Toggle Theme** button to switch theme between light and dark.
 
 ### Unit testing
 
-Obviously used Jest Testing Framework. Simply run `npm test` to test components
-I wrote props checking and styles checking cases for testing.
-Test must be passed to initialise `npm build`
+Used Jest Testing Framework. Simply run `npm test` to test components.
+run `npm run test:update` to update snapshots.
+Test must be passed to initialise `npm build`.
 
 ### improvements
 

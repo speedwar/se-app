@@ -1,17 +1,30 @@
 import React from 'react'
 import { SeHome } from 'components/pages'
-import { ThemeProvider } from 'components/context/ThemeContext'
-import { Base } from 'components/styles'
-import { themeMain } from 'components/styles'
+import { ThemeContext } from 'context'
+import { theme, Base } from 'components/styles'
 
-// styled theming via useContext React hook
-const App = () => {
-  return (
-    <ThemeProvider value={ themeMain.light }>
-      <Base />
-      <SeHome />
-    </ThemeProvider>
-  )
+export default class App extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.toggleTheme = () => {
+      this.setState(state => ({
+        theme: state.theme === theme.dark ? theme.light : theme.dark,
+      }))
+    }
+
+    this.state = {
+      theme: theme.light,
+      toggleTheme: this.toggleTheme,
+    }
+  }
+
+  render() {
+    return (
+      <ThemeContext.Provider value={ this.state }>
+        <Base />
+        <SeHome />
+      </ThemeContext.Provider>
+    )
+  }
 }
-
-export default App

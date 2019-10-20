@@ -42,14 +42,14 @@ please switch to below versions.
 In order to run the application in your local environment,
 Please follow below steps and must have yarn installed in your local.
 
-1.  `yarn install`
-2.  `npm start`
+1. `yarn install`
+2. `npm start`
 
 ## Available Scripts
 
 In the project directory, you can run:
 
->   `npm start`
+> `npm start`
 
 Runs the app in the development mode.
 The page will reload if you make edits.
@@ -70,6 +70,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.
 
 ## Key files to review
+
 ```
 SeProgram.js
 SeProgram.spec.js
@@ -79,7 +80,6 @@ SeCard.js
 SeCard.spec.js
 SeCard.style.js
 ```
-
 
 ## Feedback
 
@@ -101,9 +101,12 @@ Test must be passed to initialise `npm build`
 ### improvements
 
 - [x] Styled-components improvement with media-query.
-- [x] Define all media-query breakpoints
-- [x] Add layout grids
+- [x] Define all media-query breakpoints.
+- [x] Add layout grids.
 - [x] Add more test cases.
-- [ ] Replace create-react-app3 to webpack4.
-- [ ] Implement Storybook5 FE styleguides.
+- [X] Add theme toggler that toggles light / dark theme.
+- [X] Updating ThemeContext from a Nested Component.
+- [ ] Implement styled-components **pxToRem** solution.
+- [ ] Replace **create-react-app3** to **Webpack4**.
+- [ ] Implement **Storybook5** FE styleguides.
 - [ ] Implement i18n localisation.

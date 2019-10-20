@@ -2,24 +2,24 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import * as style from './SeCard.style'
 
-const SeCard = ({ imgLogo, imgTile, title, href }) => {
+const SeCard = ({ imgLogo, imgTile, title, provider, href }) => {
   return (
     <style.Card>
       <style.CardClickable
         href={ href }
-        aria-label={`Navigate to ${title} page`}
+        aria-label={`Click to watch ${title}`}
       >
         <style.CardContent>
           <style.CardImageResponsive>
             <style.CardProgramImage
               src={ imgTile }
-              alt="Card image"
+              alt={ title } 
             />
           </style.CardImageResponsive>
           <style.CardContentBottom>
             <style.CardContentImg
               src={ imgLogo }
-              alt="Seven logo"
+              alt={ provider}
             />
             <style.CardContentTitle>
               { title }
@@ -32,9 +32,16 @@ const SeCard = ({ imgLogo, imgTile, title, href }) => {
 }
 
 SeCard.propTypes = {
-  imgLogo: PropTypes.object.isRequired,
-  imgTile: PropTypes.object.isRequired,
+  imgLogo: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.object,
+  ]),
+  imgTile: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.object,
+  ]),
   title: PropTypes.string.isRequired,
+  provider: PropTypes.string.isRequired,
   href: PropTypes.string,
 }
 

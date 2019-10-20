@@ -15,17 +15,18 @@ Object {
       "getCacheKey": [Function],
       "process": [Function],
     },
+    "provider": "Seven",
     "title": "Home and Away",
   },
   "wrapper": <SeCardstyle__Card>
     <SeCardstyle__CardClickable
-      aria-label="Navigate to Home and Away page"
+      aria-label="Click to watch Home and Away"
       href="#"
     >
       <SeCardstyle__CardContent>
         <SeCardstyle__CardImageResponsive>
           <SeCardstyle__CardProgramImage
-            alt="Card image"
+            alt="Home and Away"
             src={
               Object {
                 "canInstrument": true,
@@ -38,7 +39,7 @@ Object {
         </SeCardstyle__CardImageResponsive>
         <SeCardstyle__CardContentBottom>
           <SeCardstyle__CardContentImg
-            alt="Seven logo"
+            alt="Seven"
             src={
               Object {
                 "canInstrument": true,
@@ -145,7 +146,7 @@ exports[`<SeCard /> component renders component with styles 1`] = `
   className="c0"
 >
   <a
-    aria-label="Navigate to Home Shopping page"
+    aria-label="Click to watch Home Shopping"
     className=""
     href="#"
   >
@@ -156,7 +157,7 @@ exports[`<SeCard /> component renders component with styles 1`] = `
         className="c2"
       >
         <img
-          alt="Card image"
+          alt="Home Shopping"
           className="c3"
           src={
             Object {
@@ -172,7 +173,7 @@ exports[`<SeCard /> component renders component with styles 1`] = `
         className="c4"
       >
         <img
-          alt="Seven logo"
+          alt="Seven Cook"
           className="c5"
           src={
             Object {

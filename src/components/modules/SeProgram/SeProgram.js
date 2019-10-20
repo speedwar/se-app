@@ -1,49 +1,72 @@
-import React from 'react'
+import React, { useContext}  from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
 import { SeCard } from 'components/components'
-import { enau } from 'components/i18n'
 import * as style from './SeProgram.style'
+import { ThemeContext } from 'context'
 
 import imgTile from 'assets/images/tile.jpg'
 import imgLogo from 'assets/images/logo.png'
 
-const SeProgram = ({ title }) => (
-  <style.SeProgramContainer>
-    <style.SeProgramTitle>
-      { title }
-    </style.SeProgramTitle>
-    <style.SeProgramContent>
-      <SeCard
-        imgLogo={ imgLogo }
-        imgTile={ imgTile }
-        title={ enau.programs.homeandaway.title }
-      />
-      <SeCard
-        imgLogo={ imgLogo }
-        imgTile={ imgTile }
-        title={ enau.programs.homeandaway.title }
-      />
-      <SeCard
-        imgLogo={ imgLogo }
-        imgTile={ imgTile }
-        title={ enau.programs.homeandaway.title }
-      />
-      <SeCard
-        imgLogo={ imgLogo }
-        imgTile={ imgTile }
-        title={ enau.programs.homeandaway.title }
-      />
-      <SeCard
-        imgLogo={ imgLogo }
-        imgTile={ imgTile }
-        title={ enau.programs.homeandaway.title }
-      />
-      <SeCard
-        imgLogo={ imgLogo }
-        imgTile={ imgTile }
-        title={ enau.programs.homeandaway.title }
-      />
-    </style.SeProgramContent>
-  </style.SeProgramContainer>
-)
+const SeProgram = ({ title }) => {
+  const themeContext = useContext(ThemeContext)
+
+  const mockData = {
+    data: {
+      programs: [
+        {
+          id: 0,
+          title: 'Home and Away',
+          provider: 'Seven',
+          image: imgTile,
+          logo: imgLogo,
+        }
+      ]
+    }
+  }
+  
+  // Duplicating a program multiple times for DEMO
+  let programList = [...mockData.data.programs]
+  let loopNumber = 6;
+  while(--loopNumber) {
+    programList.push(...mockData.data.programs)
+  }
+
+  const SeProgramTitle = styled.h2`
+    color: ${themeContext.theme.main.text};
+    font-size: 1.25rem;
+  `
+  return (
+    <style.SeProgramContainer>
+      <SeProgramTitle>
+        { title }
+      </SeProgramTitle>
+      <style.SeProgramContent>
+        {programList.map((program, i) => (
+          <SeCard
+            key={ program.title + i }
+            title={ program.title }
+            provider= { program.provider }
+            imgTile={ program.image }
+            imgLogo={ program.logo }
+          />
+        ))}
+      </style.SeProgramContent>
+    </style.SeProgramContainer>
+  )
+}
+
+SeProgram.propTypes = {
+  imgLogo: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.object,
+  ]),
+  imgTile: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.object,
+  ]),
+  title: PropTypes.string.isRequired,
+  provider: PropTypes.string,
+}
 
 export default SeProgram

@@ -1,11 +1,10 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-// import renderer from 'react-test-renderer'
 import 'jest-styled-components'
 import SeProgram from './SeProgram'
 
 const defaultProps = {
-  title: 'Programs'
+  title: 'Programs',
 }
 
 const setup = (partialProps) => {

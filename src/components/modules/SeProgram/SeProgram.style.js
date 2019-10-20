@@ -6,8 +6,3 @@ export const SeProgramContent = styled.div`
   margin-right: -0.5em;
   margin-left: -0.5em;
 `
-
-export const SeProgramTitle = styled.h2`
-  font-size: 1.375em;
-  font-weight: 800;
-`

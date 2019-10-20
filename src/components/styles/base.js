@@ -17,6 +17,11 @@ export default createGlobalStyle`
 		tab-size: 4;
 	}
 
+	html,
+	body {
+		height: 100%;
+	}
+
 	html {
 		line-height: 1.15; /* 1 */
 		-webkit-text-size-adjust: 100%; /* 2 */
@@ -149,5 +154,9 @@ export default createGlobalStyle`
 
 	summary {
 		display: list-item;
+	}
+
+	#root {
+		height: 100%;
 	}
 `

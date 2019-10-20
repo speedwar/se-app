@@ -11,6 +11,7 @@ module.exports = {
   moduleNameMapper: {
     "^.+\\.(css|scss|png|jpg|jpeg|gif|svg|pdf)$": "babel-jest",
     "^components(.*)$": "<rootDir>/src/components$1",
+    "^context(.*)$": "<rootDir>/src/context$1",
     "^assets(.*)$": "<rootDir>/src/assets$1"
   },
   setupFiles: [

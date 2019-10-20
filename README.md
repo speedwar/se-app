@@ -104,7 +104,7 @@ Test must be passed to initialise `npm build`
 - [x] Define all media-query breakpoints.
 - [x] Add layout grids.
 - [x] Add more test cases.
-- [X] Add theme toggler that toggles light / dark theme.
+- [X] Add theme toggler that switches light / dark theme.
 - [X] Updating ThemeContext from a Nested Component.
 - [ ] Implement styled-components **pxToRem** solution.
 - [ ] Replace **create-react-app3** to **Webpack4**.

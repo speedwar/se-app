@@ -1,6 +1,6 @@
 import React from 'react'
-import { SeLayout } from 'components/layouts'
-import { SeProgram } from 'components/modules'
+import { SeLayout } from 'layouts'
+import { SeProgram } from 'components'
 
 const Content = () => (
   <>

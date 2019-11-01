@@ -2,7 +2,7 @@
 // https://jestjs.io/docs/en/configuration.html
 module.exports = {
   clearMocks: true,
-  collectCoverageFrom: ['src/components/**/*.{js,jsx}'],
+  collectCoverageFrom: ['src/**/*.{js,jsx}'],
   coverageDirectory: '<rootDir>/test/__coverage__',
   moduleFileExtensions: ['js', 'jsx', 'json'],
   snapshotSerializers: [
@@ -11,11 +11,13 @@ module.exports = {
   moduleNameMapper: {
     "^.+\\.(css|scss|png|jpg|jpeg|gif|svg|pdf)$": "babel-jest",
     "^components(.*)$": "<rootDir>/src/components$1",
+    "^layouts(.*)$": "<rootDir>/src/layouts$1",
+    "^styles(.*)$": "<rootDir>/src/styles$1",
     "^context(.*)$": "<rootDir>/src/context$1",
     "^assets(.*)$": "<rootDir>/src/assets$1"
   },
   setupFiles: [
-    '<rootDir>/test/enzyme.config.js',
+    '<rootDir>/enzyme.config.js',
     'jest-plugin-context/setup'
   ],
   transform: {

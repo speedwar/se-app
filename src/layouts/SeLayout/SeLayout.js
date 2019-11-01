@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { SeHeader, SeFooter } from 'components/layouts'
+import { SeHeader, SeFooter } from 'layouts'
 import { Container } from '@bootstrap-styled/v4'
 import { ThemeContext } from 'context'
 import styled from 'styled-components'

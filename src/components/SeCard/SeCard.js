@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { bp, colors } from 'components/styles'
+import { bp, colors } from 'styles'
 
 const SeCard = ({ imgLogo, imgTile, title, provider, href }) => (
   <Card>

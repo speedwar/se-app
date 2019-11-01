@@ -5,11 +5,11 @@ Object {
   "props": Object {
     "title": "Now On",
   },
-  "wrapper": <SeProgramstyle__SeProgramContainer>
+  "wrapper": <SeProgram__SeProgramContainer>
     <SeProgram__SeProgramTitle>
       Now On
     </SeProgram__SeProgramTitle>
-    <SeProgramstyle__SeProgramContent>
+    <SeProgram__SeProgramContent>
       <SeCard
         href="#"
         imgLogo={
@@ -142,7 +142,7 @@ Object {
         provider="Seven"
         title="Home and Away"
       />
-    </SeProgramstyle__SeProgramContent>
-  </SeProgramstyle__SeProgramContainer>,
+    </SeProgram__SeProgramContent>
+  </SeProgram__SeProgramContainer>,
 }
 `;

@@ -1,7 +1,7 @@
 import React, { useContext}  from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { SeCard } from 'components/components'
+import { SeCard } from 'components'
 import { ThemeContext } from 'context'
 
 import imgTile from 'assets/images/tile.jpg'

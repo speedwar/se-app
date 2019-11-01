@@ -1,7 +1,7 @@
 import React from 'react'
-import { SeHome } from 'components/pages'
+import { SeHome } from 'views'
 import { ThemeContext } from 'context'
-import { theme, Base } from 'components/styles'
+import { theme, Base } from 'styles'
 
 export default class App extends React.Component {
   constructor(props) {

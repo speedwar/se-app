@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
 import styled from 'styled-components'
-import { bp } from 'components/styles'
+import { bp } from 'styles'
 import { Container } from '@bootstrap-styled/v4'
 import { ThemeContext } from 'context'
-import { SeThemeToggler } from 'components/components'
+import { SeThemeToggler } from 'components'
 
 const SeHeader = () => {
   const themeContext = useContext(ThemeContext)
@@ -34,7 +34,7 @@ const SeHeader = () => {
       display: block;
     `};
   `
-  
+
   return (
     <Header>
       <Container fluid={true}>

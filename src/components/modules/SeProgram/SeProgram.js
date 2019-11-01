@@ -2,7 +2,6 @@ import React, { useContext}  from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { SeCard } from 'components/components'
-import * as style from './SeProgram.style'
 import { ThemeContext } from 'context'
 
 import imgTile from 'assets/images/tile.jpg'
@@ -24,7 +23,7 @@ const SeProgram = ({ title }) => {
       ]
     }
   }
-  
+
   // Duplicating a program multiple times for DEMO
   let programList = [...mockData.data.programs]
   let loopNumber = 6;
@@ -37,11 +36,11 @@ const SeProgram = ({ title }) => {
     font-size: 1.25rem;
   `
   return (
-    <style.SeProgramContainer>
+    <SeProgramContainer>
       <SeProgramTitle>
         { title }
       </SeProgramTitle>
-      <style.SeProgramContent>
+      <SeProgramContent>
         {programList.map((program, i) => (
           <SeCard
             key={ program.title + i }
@@ -51,8 +50,8 @@ const SeProgram = ({ title }) => {
             imgLogo={ program.logo }
           />
         ))}
-      </style.SeProgramContent>
-    </style.SeProgramContainer>
+      </SeProgramContent>
+    </SeProgramContainer>
   )
 }
 
@@ -70,3 +69,10 @@ SeProgram.propTypes = {
 }
 
 export default SeProgram
+
+const SeProgramContainer = styled.section``
+
+const SeProgramContent = styled.div`
+  margin-right: -0.5em;
+  margin-left: -0.5em;
+`

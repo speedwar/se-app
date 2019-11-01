@@ -18,14 +18,14 @@ Object {
     "provider": "Seven",
     "title": "Home and Away",
   },
-  "wrapper": <SeCardstyle__Card>
-    <SeCardstyle__CardClickable
+  "wrapper": <SeCard__Card>
+    <SeCard__CardContainer
       aria-label="Click to watch Home and Away"
       href="#"
     >
-      <SeCardstyle__CardContent>
-        <SeCardstyle__CardImageResponsive>
-          <SeCardstyle__CardProgramImage
+      <SeCard__CardContent>
+        <SeCard__CardImageResponsive>
+          <SeCard__CardProgramImage
             alt="Home and Away"
             src={
               Object {
@@ -36,9 +36,9 @@ Object {
               }
             }
           />
-        </SeCardstyle__CardImageResponsive>
-        <SeCardstyle__CardContentBottom>
-          <SeCardstyle__CardContentImg
+        </SeCard__CardImageResponsive>
+        <SeCard__CardContentBottom>
+          <SeCard__CardContentImg
             alt="Seven"
             src={
               Object {
@@ -49,13 +49,13 @@ Object {
               }
             }
           />
-          <SeCardstyle__CardContentTitle>
+          <SeCard__CardContentTitle>
             Home and Away
-          </SeCardstyle__CardContentTitle>
-        </SeCardstyle__CardContentBottom>
-      </SeCardstyle__CardContent>
-    </SeCardstyle__CardClickable>
-  </SeCardstyle__Card>,
+          </SeCard__CardContentTitle>
+        </SeCard__CardContentBottom>
+      </SeCard__CardContent>
+    </SeCard__CardContainer>
+  </SeCard__Card>,
 }
 `;
 
